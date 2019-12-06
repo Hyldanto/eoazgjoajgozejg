@@ -10,8 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allContentfulBlogPost {
-              edges {
+            allContentfulBlogPost {eozfhozefhohz
                 node {
                   title
                   slug
@@ -32,7 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
             path: `/blog/${post.node.slug}/`,
             component: blogPost,
             context: {
-              slug: post.node.slug
+              slug: post.node.slug,
             },
           })
         })
